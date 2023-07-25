@@ -1,6 +1,5 @@
 import { IsEmail,MinLength, MaxLength, Matches, IsString,} from "class-validator";
 import { UserMessageHelper } from "../helpers/message.helper";
-
 export class RegisterDto {
     @MinLength(2,{message: UserMessageHelper.REGISTER_NAME_NOT_VALID})
     name: string;
@@ -16,5 +15,4 @@ export class RegisterDto {
 
     @IsString()
     avatar:string;
-
 }

@@ -1,5 +1,3 @@
-
-
 export const UserMessageHelper ={
     USER_LOGIN_OR_EMAIL_NOT_FOUND : 'Email e /ou senha invalidos. ',
     REGISTER_NAME_NOT_VALID :'Nome informado não é valido.',

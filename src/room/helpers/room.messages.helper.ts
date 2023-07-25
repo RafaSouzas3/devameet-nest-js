@@ -4,5 +4,5 @@ export const RoomMessagesHelper ={
     JOIN_USER_NOT_VALID:'Usuario informado não é valido',
     JOIN_LINK_NOT_VALID:'Link informado não é valido',
     MUTE_NOT_VALID:'Valor para o mudo não é valido',
-
+    IN_ROOM_NOT_VALID: 'O valor de estar na sala nao é inválido'
 }

@@ -2,9 +2,9 @@ import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Meet } from "./meet.schema";
 import mongoose, { HydratedDocument } from "mongoose";
 
-export type MeetObejctDocument = HydratedDocument<Meet>;
+export type MeetObjectDocument = HydratedDocument<Meet>;
 @Schema ()
-export class MeetObejct{
+export class MeetObject{
     
     @Prop({type: mongoose.Schema.Types.ObjectId, ref: Meet.name})
     meet: Meet;
@@ -23,7 +23,16 @@ export class MeetObejct{
 
     @Prop()
     orientation:number;
+    
+    @Prop({ required: true })
+    width: number;
+  
+    @Prop({ required: true })
+    height: number;
+    
+    @Prop({ required: true })
+    canWalkOver: boolean;
 
 }
 
-export const MeetObejctSchema = SchemaFactory.createForClass(MeetObejct)
+export const MeetObjectSchema = SchemaFactory.createForClass(MeetObject)
